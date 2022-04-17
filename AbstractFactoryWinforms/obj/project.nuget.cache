@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FdyKlkE2XAG7mzMLta1fUf8ufHyhzExcw5EwYufP+gGspGRzqCWOkSMynq3LhkzPVumrWP+e+nW6+ua9Y2y6Pw==",
+  "success": true,
+  "projectFilePath": "E:\\MY DOCUMENT\\Bo\\Code\\CS\\AbstractFactoryWinforms\\AbstractFactoryWinforms\\AbstractFactoryWinforms.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nhocv\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.23\\microsoft.netcore.app.host.win-x64.3.1.23.nupkg.sha512"
+  ],
+  "logs": []
+}
