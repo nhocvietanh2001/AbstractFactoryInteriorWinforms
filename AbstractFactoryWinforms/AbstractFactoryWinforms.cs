@@ -32,64 +32,16 @@ namespace AbstractFactoryWinforms
 
             return pictureBox;
         }
-        private void btnModern_Click(object sender, EventArgs e) {
+        private void ImageShow() {
+            if (factory is null) {
+                //MessageBox.Show("null","null",MessageBoxButtons.OK);
+                return;
+            }
             if (this.Controls.Count > initial) {
                 for (int num = this.Controls.Count; this.Controls.Count > initial;) {
                     this.Controls.RemoveAt(--num);
                 }
             }
-            
-            factory = new ModernFactory();
-            int i = 0;
-            List<IStyle> store = new List<IStyle>();
-            if (chbDesk.Checked) {
-                store.Add(factory.CreateDesk());
-                i++;
-            }
-            if (chbChair.Checked) {
-                store.Add(factory.CreateChair());
-                i++;
-            }
-            if (chbBed.Checked) {
-                store.Add(factory.CreateBed());
-                i++;
-            }
-
-            switch (i) {
-                case 1: {
-                        PictureBox pictureBox = GetPictureBox(630, 420, store[0], 90, 10);
-                        this.Controls.Add(pictureBox);
-                        break;
-                    }
-                case 2: {
-                        PictureBox pictureBox = GetPictureBox(315, 210,  store[0], 90, 168);
-                        this.Controls.Add(pictureBox);
-                        PictureBox pictureBox2 = GetPictureBox(315, 210, store[1], 415, 168);
-                        this.Controls.Add(pictureBox2);
-                        break;
-                    }
-                case 3: {
-                        PictureBox pictureBox = GetPictureBox(315, 210, store[0], 90, 10);
-                        this.Controls.Add(pictureBox);
-                        PictureBox pictureBox2 = GetPictureBox(315, 210, store[1], 415, 10);
-                        this.Controls.Add(pictureBox2);
-                        PictureBox pictureBox3 = GetPictureBox(315, 210, store[2], 255, 230);
-                        this.Controls.Add(pictureBox3);
-                        break;
-                    }
-                default: {
-                        break;
-                    }
-            }
-        }
-        private void btnTraditional_Click(object sender, EventArgs e) {
-            if (this.Controls.Count > initial) {
-                for (int num = this.Controls.Count; this.Controls.Count > initial;) {
-                    this.Controls.RemoveAt(--num);
-                }
-            }
-
-            factory = new TraditionalFactory();
             int i = 0;
             List<IStyle> store = new List<IStyle>();
             if (chbDesk.Checked) {
@@ -131,6 +83,29 @@ namespace AbstractFactoryWinforms
                         break;
                     }
             }
+        }
+        private void btnModern_Click(object sender, EventArgs e) {
+            factory = new ModernFactory();
+            lbStyle.Text = "Modern";
+            ImageShow();
+        }
+        private void btnTraditional_Click(object sender, EventArgs e) {
+            factory = new TraditionalFactory();
+            lbStyle.Text = "Traditional";
+            ImageShow();
+        }
+
+        private void chbDesk_CheckedChanged(object sender, EventArgs e) {
+            ImageShow();
+        }
+        
+
+        private void chbChair_CheckedChanged(object sender, EventArgs e) {
+            ImageShow();
+        }
+
+        private void chbBed_CheckedChanged(object sender, EventArgs e) {
+            ImageShow();
         }
     }
 }
