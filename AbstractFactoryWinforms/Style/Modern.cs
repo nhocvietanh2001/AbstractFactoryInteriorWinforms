@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace AbstractFactory {
-    abstract class Modern : IStyle {
+    abstract class Modern : IFurniture {
         public abstract string GetName();
         public abstract Image GetImage();
     }

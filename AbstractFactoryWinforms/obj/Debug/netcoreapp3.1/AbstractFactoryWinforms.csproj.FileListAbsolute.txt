@@ -1,5 +1,5 @@
-E:\MY DOCUMENT\Bo\Code\CS\AbstractFactoryWinforms\AbstractFactoryWinforms\obj\Debug\netcoreapp3.1\AbstractFactoryWinforms.csproj.AssemblyReference.cache
 E:\MY DOCUMENT\Bo\Code\CS\AbstractFactoryWinforms\AbstractFactoryWinforms\obj\Debug\netcoreapp3.1\AbstractFactoryWinforms.Form1.resources
+E:\MY DOCUMENT\Bo\Code\CS\AbstractFactoryWinforms\AbstractFactoryWinforms\obj\Debug\netcoreapp3.1\AbstractFactoryWinforms.Properties.Resources.resources
 E:\MY DOCUMENT\Bo\Code\CS\AbstractFactoryWinforms\AbstractFactoryWinforms\obj\Debug\netcoreapp3.1\AbstractFactoryWinforms.csproj.GenerateResource.cache
 E:\MY DOCUMENT\Bo\Code\CS\AbstractFactoryWinforms\AbstractFactoryWinforms\obj\Debug\netcoreapp3.1\AbstractFactoryWinforms.GeneratedMSBuildEditorConfig.editorconfig
 E:\MY DOCUMENT\Bo\Code\CS\AbstractFactoryWinforms\AbstractFactoryWinforms\obj\Debug\netcoreapp3.1\AbstractFactoryWinforms.AssemblyInfoInputs.cache
@@ -14,4 +14,3 @@ E:\MY DOCUMENT\Bo\Code\CS\AbstractFactoryWinforms\AbstractFactoryWinforms\bin\De
 E:\MY DOCUMENT\Bo\Code\CS\AbstractFactoryWinforms\AbstractFactoryWinforms\obj\Debug\netcoreapp3.1\AbstractFactoryWinforms.dll
 E:\MY DOCUMENT\Bo\Code\CS\AbstractFactoryWinforms\AbstractFactoryWinforms\obj\Debug\netcoreapp3.1\AbstractFactoryWinforms.pdb
 E:\MY DOCUMENT\Bo\Code\CS\AbstractFactoryWinforms\AbstractFactoryWinforms\obj\Debug\netcoreapp3.1\AbstractFactoryWinforms.genruntimeconfig.cache
-E:\MY DOCUMENT\Bo\Code\CS\AbstractFactoryWinforms\AbstractFactoryWinforms\obj\Debug\netcoreapp3.1\AbstractFactoryWinforms.Properties.Resources.resources

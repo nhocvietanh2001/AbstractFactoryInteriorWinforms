@@ -6,10 +6,10 @@ using System.Windows.Forms;
 
 namespace AbstractFactory {
     abstract class AbstractStyleFactory : IStyleFactory{
-        abstract public IStyle CreateStyle();
-        abstract public IStyle CreateDesk();
-        abstract public IStyle CreateChair();
-        abstract public IStyle CreateBed();
-        abstract public List<IStyle> CreateSet();
+        abstract public IFurniture CreateFurniture();
+        abstract public IFurniture CreateDesk();
+        abstract public IFurniture CreateChair();
+        abstract public IFurniture CreateBed();
+        abstract public List<IFurniture> CreateSet();
     }
 }

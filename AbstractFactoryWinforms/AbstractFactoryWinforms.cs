@@ -19,7 +19,7 @@ namespace AbstractFactoryWinforms
             InitializeComponent();
             initial = this.Controls.Count;
         }
-        internal PictureBox GetPictureBox(int width, int height, IStyle style, int x, int y) {
+        internal PictureBox GetPictureBox(int width, int height, IFurniture furniture, int x, int y) {
             PictureBox pictureBox = new PictureBox();
 
             //pictureBox.Image = Image.FromFile("../../../Pictures/Modern/"+ style.GetName() +".jpg");
@@ -27,8 +27,8 @@ namespace AbstractFactoryWinforms
             pictureBox.Height = height;
             pictureBox.Width = width;
             pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox.Image = style.GetImage();
-            pictureBox.Name = style.GetName();
+            pictureBox.Image = furniture.GetImage();
+            pictureBox.Name = furniture.GetName();
 
             return pictureBox;
         }
@@ -43,7 +43,7 @@ namespace AbstractFactoryWinforms
                 }
             }
             int i = 0;
-            List<IStyle> store = new List<IStyle>();
+            List<IFurniture> store = new List<IFurniture>();
             if (chbDesk.Checked) {
                 store.Add(factory.CreateDesk());
                 i++;

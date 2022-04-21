@@ -6,16 +6,16 @@ using System.Windows.Forms;
 
 namespace AbstractFactory {
     class TraditionalFactory : AbstractStyleFactory {
-        public override IStyle CreateDesk() {
+        public override IFurniture CreateDesk() {
             return new TraditionalDesk();
         }
-        public override IStyle CreateChair() {
+        public override IFurniture CreateChair() {
             return new TraditionalChair();
         }
-        public override IStyle CreateBed() {
+        public override IFurniture CreateBed() {
             return new TraditionalBed();
         }
-        public override IStyle CreateStyle() {
+        public override IFurniture CreateFurniture() {
             Random random = new Random();
             int interior = random.Next(0, 3);
             if (interior == 0) {
@@ -28,8 +28,8 @@ namespace AbstractFactory {
                     return new TraditionalBed();
             }
         }
-        public override List<IStyle> CreateSet() {
-            List<IStyle> set = new List<IStyle>();
+        public override List<IFurniture> CreateSet() {
+            List<IFurniture> set = new List<IFurniture>();
             set.Add(new TraditionalDesk());
             set.Add(new TraditionalChair());
             return set;

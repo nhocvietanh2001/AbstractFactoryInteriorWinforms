@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 
 namespace AbstractFactory {
-    interface IStyle {
+    interface IFurniture {
         String GetName();
         Image GetImage();
     }
